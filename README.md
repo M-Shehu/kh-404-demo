@@ -1,2 +1,2 @@
-# kh-404-demo
+# 404
 A 404 page built for a KindHealth competition
