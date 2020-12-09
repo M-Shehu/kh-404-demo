@@ -179,7 +179,7 @@ code {
 }
 
 .cta-button {
-  transition: all ease-in-out 0.2s;
+  transition: background-color ease-in-out 0.2s;
   border: 2px solid #ff1783;
   color: #ff1783;
   padding: 10px 20px;
@@ -241,7 +241,7 @@ code {
 }
 
 #text-404 span {
-  transition: all ease 0.2s;
+  transition: text-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 
 #text-404 span:hover {
