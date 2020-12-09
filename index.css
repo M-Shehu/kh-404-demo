@@ -169,8 +169,8 @@ code {
 #container {
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
-  max-width: 1024px;
+  padding: 50px 20px;
+  max-width: 1064px;
   height: 100vh;
 }
 
@@ -223,6 +223,7 @@ code {
   flex: 1;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
 }
 
 #sign-404 {
@@ -249,7 +250,7 @@ code {
   text-shadow: none;
 }
 
-.logo {
+.sub-logo {
   text-align: center;
   top: 0;
   left: 0;
@@ -258,17 +259,17 @@ code {
   user-select: none;
 }
 
-.logo b {
+.sub-logo b {
   font: 400 50px "Vibur";
   color: #fee;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #1fff17, 0 0 0.5em #1fff17,
     0 0 0.1em #1fff17, 0 10px 3px #000;
 }
 
-.logo b span {
+.sub-logo b span {
   animation: blink linear infinite 2s;
 }
-.logo b span:nth-of-type(2) {
+.sub-logo b span:nth-of-type(2) {
   animation: blink linear infinite 3s;
 }
 @keyframes blink {
@@ -301,5 +302,43 @@ code {
   92.5% {
     color: inherit;
     text-shadow: inherit;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #text-404 {
+    font-size: 100px;
+    font-weight: 900;
+    font-family: "Bungee Outline";
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff1783, 0 0 0.5em #ff1783,
+      0 0 0.1em #ff1783, 5px 10px 3px #000;
+  }
+
+  #copy-404 {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  #copy-404 h1 {
+    font-weight: 900;
+    font-size: 2em;
+  }
+
+  #copy-404 h3 {
+    margin: 20px 0;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  #container {
+    padding: 20px;
+  }
+
+  .cta-button {
+    width: 60%;
+  }
+
+  .sub-logo b {
+    font-size: 30px;
   }
 }
